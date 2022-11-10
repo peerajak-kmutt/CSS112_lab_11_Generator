@@ -4,7 +4,7 @@ def gen5odds():
 
         
         
-def Problem1(n): 
+def Problem1(): 
     #Your code Here
     #End your code
     return []
