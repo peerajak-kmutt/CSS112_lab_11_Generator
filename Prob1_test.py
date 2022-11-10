@@ -1,11 +1,15 @@
 import Prob1 as p1
-import numpy as np
+
 
 def test_1():
-    one3 = p1.Problem1(3)
-    assert (one3 == np.array([[1.,0.,0.],[1.,1.,0.],[1.,1.,1.]])).all()
+    g9 =   p1.gen5odds() 
+    a1 = next(g9)
+    for k in range(8):
+        next(g9)
+    a10 = next(g9)
+    assert (a1 == [1, 3, 5, 7, 9] ).all() and (a10 == [91,93,95,97,99] ).all()
 
 def test_2():
-    one4 = p1.Problem1(4)
-    assert (one4 == np.array([[1.,0.,0.,0.],[1.,1.,0.,0.],[1.,1.,1.,0.],[1.,1.,1.,1.]])).all()
+    a = p1.Problem1()
+    assert ( a == [25, 75, 125, 175, 225, 275, 325, 375, 425, 475]).all()
 
