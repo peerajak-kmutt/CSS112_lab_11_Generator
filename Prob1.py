@@ -1,5 +1,3 @@
-import numpy as np
-
 def gen5odds():
     #Your Code here
     #End your code
